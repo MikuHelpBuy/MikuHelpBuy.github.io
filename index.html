@@ -1,0 +1,265 @@
+<html>
+  <head>
+    <title>🌟MIKU HelpBuy🌟</title>
+	<script src='OSC.js'></script>
+    <meta charset="UTF-8">
+  </head>
+  <body style="background:linear-gradient(white,#ADD8E6);">
+    <div id="header" style="text-align:center; background-color:#FFE4E1; padding:15px;">
+	  <canvas id='mycanvas' width='750' height='105' ></canvas>
+	</div>
+      <script>
+	    canvas             = O('mycanvas')
+	    S(canvas).background = '#ADD8E6'
+	    context            = canvas.getContext('2d')
+        context.font       ="75px monospace";
+        context.shadowColor='white';
+  	    context.shadowOffsetX = 5;
+        context.shadowOffsetY = 5;
+        context.shadowBlur =15;
+        context.lineWidth  =9;
+        context.strokeText("---MIKU HelpBuy---",5,75);
+        context.shadowBlur =80;
+        context.fillStyle  ="#FFB6C1";
+        context.fillText("---MIKU HelpBuy---",5,75);
+      </script>
+	<div style="border:3px #ADD8E6 dashed;padding:5px;background-color:#fafafa;text-align:center; margin:3px 0px">
+	<span class="DinamicColor">⭐️ 幫 你 逛 街 幫 你 買 ⭐️</span><div class="EMAIL" style="color:lightblue;text-align:right;">*Email&nbsp;<a href="mailto:featsusa@yahoo.com.tw">MIKU</a></div>
+	</div>
+	<style type="text/css">
+
+.DinamicColor{
+ font-size: 1.5em;
+ position: center;
+  color:transparent;
+  background-image: -webkit-linear-gradient(left, red, pink 0%,orange 75%, red 100%);
+  -webkit-background-clip: text;
+  background-size: 200% 100%;
+  animation: vary 2s infinite ease-in-out;
+font-family:YouYuan, Comic Sans MS,arial,helvetica,sans-serif;
+}  
+@keyframes vary{
+  0%{background-position: 0;}
+  100%{background-position: -100%;}
+}
+</style>	
+	<style type="text/css">
+#body{
+background: radial-gradient(circle,white,pink);
+	}
+#mycanvas{
+border-radius: 25px
+}	
+#Center {
+border:10px #FFE4E1 dotted;
+width:1000px;
+height:1022px;
+margin:10px auto;
+background: radial-gradient(circle,white,pink);
+}
+#C_Left{
+　width:120px;
+  height:1000px;
+　background-color:red;
+}
+#C_Right{
+　width:240px;
+　height:1000px;
+　background-color:#fffaf3;
+}
+#Footer{
+width:auto;
+height:50px;
+background-color:#FFE4E1;
+}
+
+.slider_container {
+    margin: 30px auto;
+    width: 600px;
+    height: 450px;
+    position: relative;
+    border: 20px solid;    
+    border-color: #fff;
+    border-bottom-width: 100px;
+    background-color: #f5f5f5;
+    box-shadow: #666 0 0 5px;
+}
+
+.slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.slider_container div {
+    -webkit-animation: round 25s linear infinite;
+            animation: round 25s linear infinite;
+}
+
+@-webkit-keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1s fade in*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5s Stop*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6s fade out*/
+    }
+}
+@keyframes round {
+    4% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 0 - 1s fade in*/
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* 1- 5s Stop*/
+    }
+    24% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        /* 5-6s fade out*/
+    }
+}
+
+.slider_container div:nth-child(5) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+.slider_container div:nth-child(4) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+
+.slider_container div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+.slider_container div:nth-child(2) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
+.slider_container div:nth-child(1) {
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
+}
+.slider_container span {    
+    color: #000;
+    background: #fff;
+    position: absolute;
+    left: 0%;
+    top: 450px;
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    -webkit-transform:scaleY(0);
+        -ms-transform:scaleY(0);
+            transform:scaleY(0);
+    -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+
+.slider_container:hover span {
+    width: 100%;
+    -webkit-transform:scaleY(1);
+        -ms-transform:scaleY(1);
+            transform:scaleY(1);
+}
+.slider_container:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+.info{
+font-family: Comic Sans MS,arial,helvetica,sans-serif;
+}
+.list{
+font-family:Comic Sans MS,arial,helvetica,sans-serif;
+font-size: 1.5em;
+}
+
+.C_Left  {
+overflow: hidden;
+width: 800px;
+height: 600px;
+}
+
+
+.C_Left img {
+transition: all 0.5s ease 0s;
+}
+
+
+.C_Left img:hover {
+-moz-transform: scale(1.05);
+-ms-transform: scale(1.05);
+-o-transform: scale(1.05);
+-webkit-transform: scale(1.05);
+transform: scale(1.05);
+opacity: .5;
+}
+
+    </style>	
+	<div id="Center" style="padding:8px;">
+    <div class="C_Left"style="width:200px;height:1000px;border:3px #cccccc dashed;float:left;background-color:#fffaf3;padding:8px;">
+      <img src="https://i.imgur.com/2bxdHdK.jpg" width="200" height="200">
+	 <div class="list" style="float: left" >
+        <ul>
+            <li><a href="FirstPage.html" target="targetText">首頁．Home</a></li>
+			<li><a href="AboutMIKU.html" target="targetText">關於．MIKU</a></li>
+            <li><a href="Brand.html" target="targetText">品牌．Brand</a></li>
+        </ul>
+    </div>
+    
+	</div>  
+	
+	<div class="C_Right"style="width:756px;height:1000px;float:left;padding:8px;">
+	<div class="topright" style="border:3px #cccccc dashed;width:760px;height:380px;">
+<iframe src="FirstPage.html" style="float: left;width:755px;height:380px;" name="targetText" ></iframe>
+</div>
+	<div class="slider_container">
+	<div>
+		<img src="https://i.imgur.com/OMcOHJa.jpg" width="600" height="450" />
+		<span class="info">Cosmetics from Sephora</span>
+	</div>
+	<div>
+		<img src="https://i.imgur.com/eM6bVt5.jpg" width="600" height="450" />
+		<span class="info">Dolls from Tokyo Disney</span>
+	</div>
+	<div>
+		<img src="https://i.imgur.com/iOqOIdD.jpg" width="600" height="450" />
+		<span class="info">Cookies from Japan</span>
+	</div>
+	<div>
+		<img src="https://i.imgur.com/zhtdl5Y.jpg" width="600" height="450" />
+		<span class="info">Dolls from Orlando Disney</span>
+	</div>
+	<div>
+		<img src="https://i.imgur.com/5qK3T9U.jpg" width="600" height="450" />
+		<span class="info">Bags from Outlet</span>
+	</div>
+</div>
+	</div> 
+    <div class="clear" > </div> 
+    </div> 
+    <div id="Footer" style="text-align:right;line-height:50px">Copyright <img src="https://i.imgur.com/aTvk34b.png" width="10" height="10" />MIKU HelpBuy All rights reserved.&nbsp;&nbsp;</div> 
+  
+  </body>
+
+   
+
+  
+</html>
